@@ -16,8 +16,9 @@
 
 .poster{
     cursor:pointer;
-    max-height: 250px;
+    max-height: 220px;
     margin-right: 10px;
+   
 }
 
 .smallPoster{
