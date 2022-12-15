@@ -10,7 +10,7 @@ function Banner() {
      axios.get(`trending/all/week?api_key=${API_KEY}&language=en-US`).then((response)=>{
       // console.log(response.data.results);
       // console.log(response.data.results.length+)
-      
+
       // show random movies on banner
       const indexvalue= Math.floor(Math.random()*response.data.results.length)
       setMovie(response.data.results[indexvalue])
@@ -19,7 +19,7 @@ function Banner() {
   return (
     <div  style={{backgroundImage:`url(${movie? imageUrl + movie.backdrop_path: "" })`}} className='banner'>
         <div className='content'>
-            <h1 className='title'>{movie ? movie.title: ""}</h1>
+            <h1 className='title'>{movie ? movie.title||movie.name: ""}</h1>
             <div className='banner_buttons'>
                 <button className='button'>Play</button>
                 <button className='button'>My List</button>
