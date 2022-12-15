@@ -4,7 +4,7 @@ import './App.css';
 import Banner from './components/banner/Banner';
 import Navbar from './components/Navbar/Navbar';
 import Rowpost from './components/rowpost/Rowpost';
-import Details from './components/Details/Details';
+// import Details from './components/Details/Details';
 
 
 function App() {

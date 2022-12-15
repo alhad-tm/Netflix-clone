@@ -8,8 +8,12 @@ function Banner() {
   const [movie, setMovie] = useState()
   useEffect(()=>{
      axios.get(`trending/all/week?api_key=${API_KEY}&language=en-US`).then((response)=>{
-      console.log(response.data.results);
-      setMovie(response.data.results[1])
+      // console.log(response.data.results);
+      // console.log(response.data.results.length+)
+      
+      // show random movies on banner
+      const indexvalue= Math.floor(Math.random()*response.data.results.length)
+      setMovie(response.data.results[indexvalue])
      })
     }, [])
   return (
