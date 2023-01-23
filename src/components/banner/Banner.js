@@ -23,6 +23,7 @@ function Banner() {
             <div className='banner_buttons'>
                 <button className='button'>Play</button>
                 <button className='button'>My List</button>
+                
             </div>
             <h2 className='description'>{movie? movie.overview : ""}.</h2>
         </div>
